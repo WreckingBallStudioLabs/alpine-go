@@ -1,4 +1,4 @@
-FROM golang:1.9.1-alpine3.6
+FROM golang:1.17.6-alpine3.15
 ENV GOBINARIES /go/bin
 WORKDIR $GOBINARIES
 RUN apk add --update tini curl gcc musl-dev git && rm -rf /var/cache/apk/* &&\
